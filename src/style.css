@@ -8,9 +8,9 @@
   --accent-bg: rgba(198, 255, 133, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
 
-  --sans: 'ヒラギノ角ゴシック', 'Meiryo', 'MS Gothic', system-ui, Roboto, sans-serif;
-  --serif: 'ヒラギノ明朝', 'MS明朝', 'Meiryo', system-ui, Roboto, serif;
-  --heading: 'ヒラギノ角ゴシック', 'Meiryo', system-ui, Roboto, sans-serif;
+  --sans: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'BIZ UDPGothic', 'Noto Sans JP', 'Helvetica Neue', Arial, Robot, sans-serif, system-ui;
+  --serif: 'Hiragino Mincho ProN', 'Yu Mincho', 'New York', 'Times New Roman', Roboto, serif, system-ui;
+  --heading: var(--sans);
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/1.5 var(--serif);
@@ -62,36 +62,27 @@ main {
 
 h1,
 h2 {
-  margin: 1em 0 0;
+  margin: 1em 0 0.5em;
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
+  font-size: 3em;
   text-align: center;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  font-size: 1.5em;
+  line-height: 1.2;
 }
+
 p {
-  margin: 0;
+  margin: 1em 0;
 }
 
 ul, ol {
-  margin: 0;
+  margin: 1em 0;
 }
 
 ul {
@@ -112,6 +103,9 @@ a {
   width: 100%;
   max-width: 320px;
   aspect-ratio: 1;
+}
+#icon > figcaption {
+  display: none;
 }
 
 img.emoji {
