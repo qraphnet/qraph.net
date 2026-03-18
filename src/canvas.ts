@@ -22,7 +22,7 @@ export class Canvas {
 
     const observer = new ResizeObserver(([entry]) => {
       if (entry != null) {
-        const box = entry.devicePixelContentBoxSize[0];
+        const box = entry.contentBoxSize[0];
         element.width = this.#width = box.inlineSize;
         element.height = this.#height = box.blockSize;
         this.animation?.render();
